@@ -8,35 +8,31 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dariust\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\dtyso\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dariust\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
+      "projectUniqueName": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
       "projectName": "560Project",
-      "projectPath": "C:\\Users\\dariust\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
-      "packagesPath": "C:\\Users\\dariust\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dariust\\source\\repos\\CIS-560-Project\\560Project\\obj\\",
+      "projectPath": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
+      "packagesPath": "C:\\Users\\dtyso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dariust\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dtyso\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
