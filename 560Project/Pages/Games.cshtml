@@ -4,3 +4,25 @@
     ViewData["Title"] = "Games";
 }
 <p>This shows all of the games.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>GameID</th>
+            <th>GameName</th>
+            <th>PublisherID</th>
+            <th>UserRating</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var game in Model.listGames)
+{
+    <tr>
+        <td>@game.GameId</td>
+        <td>@game.GameName</td>
+        <td>@game.PublisherID</td>
+        <td>@game.UserRating</td>
+    </tr>
+}
+    </tbody>
+</table>

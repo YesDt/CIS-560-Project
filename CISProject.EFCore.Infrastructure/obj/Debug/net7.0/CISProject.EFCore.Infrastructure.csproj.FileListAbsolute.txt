@@ -1,0 +1,12 @@
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\bin\Debug\net7.0\CISProject.EFCore.Infrastructure.deps.json
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\bin\Debug\net7.0\CISProject.EFCore.Infrastructure.dll
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\bin\Debug\net7.0\CISProject.EFCore.Infrastructure.pdb
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\CISProject.EFCore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\CISProject.EFCore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\CISProject.EFCore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\CISProject.EFCore.Infrastructure.AssemblyInfo.cs
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\CISProject.EFCore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\CISProject.EFCore.Infrastructure.dll
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\refint\CISProject.EFCore.Infrastructure.dll
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\CISProject.EFCore.Infrastructure.pdb
+C:\Users\dtyso\source\repos\CIS-560-Project\CISProject.EFCore.Infrastructure\obj\Debug\net7.0\ref\CISProject.EFCore.Infrastructure.dll
