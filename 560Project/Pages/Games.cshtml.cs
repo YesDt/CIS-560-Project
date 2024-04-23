@@ -1,7 +1,5 @@
-using CISProject.EFCore.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
 using System.Data.SqlClient;
 
 namespace _560Project.Pages
@@ -13,7 +11,7 @@ namespace _560Project.Pages
     public class GamesModel : PageModel
     {
         public List<GameInfo> listGames = new List<GameInfo>();
-        //private CISProjectDataContext? _context;
+
         public void OnGet()
         {
             try
