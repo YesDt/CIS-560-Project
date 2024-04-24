@@ -4,9 +4,9 @@ using System.Data.SqlClient;
 
 namespace _560Project.Pages
 {
-    public class ConsolesModel : PageModel
+    public class GamesAndConsolesModel : PageModel
     {
-        public List<ConsoleInfo> listConsoles = new List<ConsoleInfo>();
+        public List<GameConsoleInfo> listGameConsoles = new List<GameConsoleInfo>();
         public void OnGet()
         {
             try
@@ -15,21 +15,21 @@ namespace _560Project.Pages
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT * FROM Store.Console";
+                    string sql = "SELECT * FROM Store.GameConsole";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
                             {
-                                ConsoleInfo console = new ConsoleInfo();
-                                console.ConsoleID = reader.GetInt32(0);
-                                console.ConsoleName = reader.GetString(1);
-                                console.PublisherID = reader.GetInt32(2);
-                                console.UserRating = reader.GetInt32(3);
-                                console.UserPrice = reader.GetInt32(4);
-                                console.Quantity = reader.GetInt32(5);
-                                listConsoles.Add(console);
+                                GameConsoleInfo gameConsole = new GameConsoleInfo();
+                                gameConsole.GameConsoleID = reader.GetInt32(0);
+                                gameConsole.GameID = reader.GetInt32(1);
+                                gameConsole.ConsoleID = reader.GetInt32(2);
+                                gameConsole.Title = reader.GetString(3);
+                                gameConsole.Quantity = reader.GetInt32(4);
+                                gameConsole.UnitPrice = reader.GetInt32(5);
+                                listGameConsoles.Add(gameConsole);
                             }
                         }
                     }
@@ -42,13 +42,13 @@ namespace _560Project.Pages
         }
     }
 
-    public class ConsoleInfo
+    public class GameConsoleInfo
     {
+        public int GameConsoleID;
+        public int GameID;
         public int ConsoleID;
-        public string ConsoleName;
-        public int PublisherID;
-        public int UserRating;
-        public int UserPrice;
+        public string Title;
         public int Quantity;
+        public int UnitPrice;
     }
 }

@@ -4,3 +4,20 @@
     ViewData["Title"] = "Stores";
 }
 <p>This shows all of the stores.</p>
+<table class="table">
+<thead>
+    <tr>
+        <th>StoreID</th>
+        <th>StoreName</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach (var store in Model.listStores)
+    {
+        <tr>
+            <td>@store.StoreID</td>
+            <td>@store.StoreName</td>
+        </tr>
+    }
+</tbody>
+</table>

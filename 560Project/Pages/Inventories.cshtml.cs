@@ -4,9 +4,9 @@ using System.Data.SqlClient;
 
 namespace _560Project.Pages
 {
-    public class PublishersModel : PageModel
+    public class InventoriesModel : PageModel
     {
-        public List<PublisherInfo> listPublishers = new List<PublisherInfo>();
+        public List<InventoryInfo> listInventories = new List<InventoryInfo>();
         public void OnGet()
         {
             try
@@ -15,17 +15,18 @@ namespace _560Project.Pages
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT * FROM Store.Publisher";
+                    string sql = "SELECT * FROM Store.Inventory";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
                             {
-                                PublisherInfo publisher = new PublisherInfo();
-                                publisher.PublisherID = reader.GetInt32(0);
-                                publisher.PublisherName = reader.GetString(1);
-                                listPublishers.Add(publisher);
+                                InventoryInfo inventory = new InventoryInfo();
+                                inventory.InventoryID = reader.GetInt32(0);
+                                inventory.GameConsoleID = reader.GetInt32(1);
+                                inventory.StoreID = reader.GetInt32(2);
+                                listInventories.Add(inventory);
                             }
                         }
                     }
@@ -38,9 +39,10 @@ namespace _560Project.Pages
         }
     }
 
-    public class PublisherInfo
+    public class InventoryInfo
     {
-        public int PublisherID;
-        public string PublisherName;
+        public int InventoryID;
+        public int GameConsoleID;
+        public int StoreID;
     }
 }

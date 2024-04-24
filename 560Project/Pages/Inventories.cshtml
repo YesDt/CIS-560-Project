@@ -1,0 +1,25 @@
+﻿@page
+@model _560Project.Pages.InventoriesModel
+@{
+    ViewData["Title"] = "Inventory";
+}
+<p>This shows the inventory; the games and consoles, and the stores.</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>InventoryID</th>
+            <th>GameConsoleID</th>
+            <th>StoreID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var inventory in Model.listInventories)
+        {
+            <tr>
+                <td>@inventory.InventoryID</td>
+                <td>@inventory.GameConsoleID</td>
+                <td>@inventory.StoreID</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,32 @@
+﻿@page
+@model _560Project.Pages.GamesAndConsolesModel
+@{
+    ViewData["Title"] = "GamesAndConsoles";
+}
+<p>This shows the games with console information.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>GameConsoleID</th>
+            <th>GameID</th>
+            <th>ConsoleID</th>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>UnitPrice</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var gameconsole in Model.listGameConsoles)
+        {
+            <tr>
+                <td>@gameconsole.GameConsoleID</td>
+                <td>@gameconsole.GameID</td>
+                <td>@gameconsole.ConsoleID</td>
+                <td>@gameconsole.Title</td>
+                <td>@gameconsole.Quantity</td>
+                <td>@gameconsole.UnitPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>

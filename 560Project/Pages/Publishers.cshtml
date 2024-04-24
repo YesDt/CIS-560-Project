@@ -4,3 +4,21 @@
     ViewData["Title"] = "Publishers";
 }
 <p>This shows all of the publishers.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>PublisherID</th>
+            <th>PublisherName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var publisher in Model.listPublishers)
+        {
+            <tr>
+                <td>@publisher.PublisherID</td>
+                <td>@publisher.PublisherName</td>
+            </tr>
+        }
+    </tbody>
+</table>

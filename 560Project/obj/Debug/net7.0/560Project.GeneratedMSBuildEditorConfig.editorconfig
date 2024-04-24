@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dtyso\source\repos\CIS-560-Project\560Project
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dtyso/source/repos/CIS-560-Project/560Project/Pages/All.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/dtyso/source/repos/CIS-560-Project/560Project/Pages/Consoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc29sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,8 +28,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dtyso/source/repos/CIS-560-Project/560Project/Pages/GamesAndConsoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZXNBbmRDb25zb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dtyso/source/repos/CIS-560-Project/560Project/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dtyso/source/repos/CIS-560-Project/560Project/Pages/Inventories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dtyso/source/repos/CIS-560-Project/560Project/Pages/Privacy.cshtml]

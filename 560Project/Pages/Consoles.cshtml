@@ -4,3 +4,29 @@
     ViewData["Title"] = "Consoles";
 }
 <p>This shows all of the consoles.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ConsoleID</th>
+            <th>ConsoleName</th>
+            <th>PublisherID</th>
+            <th>UserRating</th>
+            <th>UserPrice</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var console in Model.listConsoles)
+        {
+            <tr>
+                <td>@console.ConsoleID</td>
+                <td>@console.ConsoleName</td>
+                <td>@console.PublisherID</td>
+                <td>@console.UserRating</td>
+                <td>@console.UserPrice</td>
+                <td>@console.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
