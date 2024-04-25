@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj": {}
+    "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj": {
+    "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
+        "projectUniqueName": "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
         "projectName": "560Project",
-        "projectPath": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
-        "packagesPath": "C:\\Users\\dtyso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\obj\\",
+        "projectPath": "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
+        "packagesPath": "C:\\Users\\garre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dtyso\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\garre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

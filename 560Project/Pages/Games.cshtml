@@ -10,6 +10,7 @@
     <input type="text" name="GameNameFilter" placeholder="Filter by GameName">
     <input type="number" name="PublisherIDFilter" placeholder="Filter by PublisherID">
     <input type="number" name="UserRatingFilter" placeholder="Filter by UserRating">
+    <input type="number" name="UnitPriceFilter" placeholder="Filter by UnitPrice">
     <button type="submit">Apply Filters</button>
 </form>
 <table class="table">
@@ -19,6 +20,7 @@
             <th>GameName</th>
             <th>PublisherID</th>
             <th>UserRating</th>
+            <th>UnitPrice</th>
         </tr>
     </thead>
     <tbody>
@@ -28,7 +30,8 @@
         <td>@game.GameId</td>
         <td>@game.GameName</td>
         <td>@game.PublisherID</td>
-        <td>@game.UserRating</td>
+        <td>@game.UserRating%</td>
+        <td>$@game.UnitPrice</td>
     </tr>
 }
     </tbody>

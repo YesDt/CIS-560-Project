@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace _560Project.Pages
@@ -11,13 +12,18 @@ namespace _560Project.Pages
         public int InventoryIDFilter { get; set; }
 
         [BindProperty(SupportsGet = true)]
-        public int GameConsoleIDFilter { get; set; }
+        public string? GameConsoleIDFilter { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public int StoreIDFilter { get; set; }
 
         [BindProperty(SupportsGet = true)]
-        public int QuantityFilter { get; set; }
+        public string? ConsoleIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string? QuantityFilter { get; set; }
+
+        
 
         public List<InventoryInfo> listInventories = new List<InventoryInfo>();
         public List<InventoryInfo> infoToAdd = new List<InventoryInfo>();
@@ -25,6 +31,7 @@ namespace _560Project.Pages
         {
             try
             {
+                
                 string connectionString = "Data Source=(localdb)\\MSSQLLocalDb;Initial Catalog=CISProject;Integrated Security=True";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -38,9 +45,26 @@ namespace _560Project.Pages
                             {
                                 InventoryInfo inventory = new InventoryInfo();
                                 inventory.InventoryID = reader.GetInt32(0);
-                                inventory.GameConsoleID = reader.GetInt32(1);
-                                inventory.StoreID = reader.GetInt32(2);
-                                inventory.Quantity = reader.GetInt32(3);
+                                try
+                                {
+                                    int gameTemp = reader.GetInt32(1);
+                                }
+                                catch (Exception e1)
+                                { 
+                                    inventory.ConsoleID = reader.GetInt32(3);
+                                    inventory.StoreID = reader.GetInt32(2);
+                                    inventory.Quantity = reader.GetInt32(4);
+                                }
+                                try
+                                {
+                                    int consoleTemp = reader.GetInt32(3);
+                                }
+                                catch (Exception e2)
+                                {
+                                    inventory.GameConsoleID = reader.GetInt32(1);
+                                    inventory.StoreID = reader.GetInt32(2);
+                                    inventory.Quantity = reader.GetInt32(4);
+                                }
                                 infoToAdd.Add(inventory);
                                 if (InventoryIDFilter != 0)
                                 {
@@ -49,9 +73,9 @@ namespace _560Project.Pages
 
 
                                 }
-                                if (GameConsoleIDFilter != 0)
+                                if (!String.IsNullOrEmpty(GameConsoleIDFilter))
                                 {
-                                    infoToAdd = infoToAdd.Where(p => p.GameConsoleID == GameConsoleIDFilter).ToList();
+                                    infoToAdd = infoToAdd.Where(p => p.GameConsoleID == int.Parse(GameConsoleIDFilter)).ToList();
 
                                 }
                                 if (StoreIDFilter != 0)
@@ -59,9 +83,14 @@ namespace _560Project.Pages
                                     infoToAdd = infoToAdd.Where(p => p.StoreID == StoreIDFilter).ToList();
 
                                 }
-                                if (QuantityFilter != 0)
+                                if (!String.IsNullOrEmpty(ConsoleIDFilter))
                                 {
-                                    infoToAdd = infoToAdd.Where(p => p.Quantity == QuantityFilter).ToList();
+                                    infoToAdd = infoToAdd.Where(p => p.ConsoleID == int.Parse(ConsoleIDFilter)).ToList();
+
+                                }
+                                if ((!String.IsNullOrEmpty(QuantityFilter)))
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.Quantity == int.Parse(QuantityFilter)).ToList();
 
                                 }
                                 listInventories = infoToAdd.ToList();
@@ -70,7 +99,7 @@ namespace _560Project.Pages
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception e3)
             {
 
             }
@@ -82,6 +111,7 @@ namespace _560Project.Pages
         public int InventoryID;
         public int GameConsoleID;
         public int StoreID;
+        public int ConsoleID;
         public int Quantity;
     }
 }

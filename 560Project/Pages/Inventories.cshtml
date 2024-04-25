@@ -7,9 +7,10 @@
 
 <form method="get">
     <input type="number" name="InventoryIDFilter" placeholder="Filter by InventoryID">
-    <input type="number" name="GameConsoleIDFilter" placeholder="Filter by GameConsoleID">
+    <input type="text" name="GameConsoleIDFilter" placeholder="Filter by GameConsoleID">
     <input type="number" name="StoreIDFilter" placeholder="Filter by StoreID">
-    <input type="number" name="QuantityFilter" placeholder="Filter by Quantity">
+    <input type="text" name="ConsoleIDFilter" placeholder="Filter by ConsoleID">
+    <input type="text" name="QuantityFilter" placeholder="Filter by Quantity">
     <button type="submit">Apply Filters</button>
 </form>
 <table class="table">
@@ -18,6 +19,7 @@
             <th>InventoryID</th>
             <th>GameConsoleID</th>
             <th>StoreID</th>
+            <th>ConsoleID</th>
             <th>Quantity</th>
         </tr>
     </thead>
@@ -28,6 +30,7 @@
                 <td>@inventory.InventoryID</td>
                 <td>@inventory.GameConsoleID</td>
                 <td>@inventory.StoreID</td>
+                <td>@inventory.ConsoleID</td>
                 <td>@inventory.Quantity</td>
             </tr>
         }
