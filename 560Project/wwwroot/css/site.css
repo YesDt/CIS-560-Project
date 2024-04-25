@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.page-header {
+    background-color: deepskyblue; /* Set your desired background color here */
+}

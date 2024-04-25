@@ -4,6 +4,12 @@
     ViewData["Title"] = "Stores";
 }
 <p>This shows all of the stores.</p>
+
+<form method="get">
+    <input type="number" name="StoreIDFilter" placeholder="Filter by StoreID">
+    <input type="text" name="StoreNameFilter" placeholder="Filter by StoreName">
+    <button type="submit">Apply Filters</button>
+</form>
 <table class="table">
 <thead>
     <tr>

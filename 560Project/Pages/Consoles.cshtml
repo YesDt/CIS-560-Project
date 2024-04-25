@@ -4,7 +4,14 @@
     ViewData["Title"] = "Consoles";
 }
 <p>This shows all of the consoles.</p>
-
+<form method="get">
+    <input type="number" name="ConsoleIDFilter" placeholder="Filter by ConsoleID">
+    <input type="text" name="ConsoleNameFilter" placeholder="Filter by ConsoleName">
+    <input type="number" name="PublisherIDFilter" placeholder="Filter by PublisherID">
+    <input type="number" name="UserRatingFilter" placeholder="Filter by UserRating">
+    <input type="number" name="UnitPriceFilter" placeholder="Filter by UnitPrice">
+    <button type="submit">Apply Filters</button>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -13,7 +20,7 @@
             <th>PublisherID</th>
             <th>UserRating</th>
             <th>UserPrice</th>
-            <th>Quantity</th>
+
         </tr>
     </thead>
     <tbody>
@@ -24,8 +31,8 @@
                 <td>@console.ConsoleName</td>
                 <td>@console.PublisherID</td>
                 <td>@console.UserRating</td>
-                <td>@console.UserPrice</td>
-                <td>@console.Quantity</td>
+                <td>@console.UnitPrice</td>
+
             </tr>
         }
     </tbody>

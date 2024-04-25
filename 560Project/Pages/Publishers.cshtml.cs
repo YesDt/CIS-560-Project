@@ -1,12 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace _560Project.Pages
 {
     public class PublishersModel : PageModel
     {
+
+        [BindProperty(SupportsGet = true)]
+        public int PublisherIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string? PublisherNameFilter { get; set; }
+
         public List<PublisherInfo> listPublishers = new List<PublisherInfo>();
+        public List<PublisherInfo> infoToAdd = new List<PublisherInfo>();
         public void OnGet()
         {
             try
@@ -25,7 +34,20 @@ namespace _560Project.Pages
                                 PublisherInfo publisher = new PublisherInfo();
                                 publisher.PublisherID = reader.GetInt32(0);
                                 publisher.PublisherName = reader.GetString(1);
-                                listPublishers.Add(publisher);
+                                infoToAdd.Add(publisher);
+                                if (PublisherIDFilter != 0)
+                                {
+
+                                    infoToAdd = infoToAdd.Where(p => p.PublisherID == PublisherIDFilter).ToList();
+
+
+                                }
+                                if (!String.IsNullOrEmpty(PublisherNameFilter))
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.PublisherName.Contains(PublisherNameFilter)).ToList();
+
+                                }
+                                listPublishers = infoToAdd.ToList();
                             }
                         }
                     }

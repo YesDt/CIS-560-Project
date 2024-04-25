@@ -1,12 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
 using System.Data.SqlClient;
 
 namespace _560Project.Pages
 {
     public class StoresModel : PageModel
     {
+
+        [BindProperty(SupportsGet = true)]
+        public int StoreIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string? StoreNameFilter { get; set; }
         public List<StoreInfo> listStores = new List<StoreInfo>();
+        public List<StoreInfo> infoToAdd = new List<StoreInfo>();
         public void OnGet()
         {
             try
@@ -25,7 +33,20 @@ namespace _560Project.Pages
                                 StoreInfo store = new StoreInfo();
                                 store.StoreID = reader.GetInt32(0);
                                 store.StoreName = reader.GetString(1);
-                                listStores.Add(store);
+                                infoToAdd.Add(store);
+                                if (StoreIDFilter != 0)
+                                {
+
+                                    infoToAdd = infoToAdd.Where(p => p.StoreID == StoreIDFilter).ToList();
+
+
+                                }
+                                if (!String.IsNullOrEmpty(StoreNameFilter))
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.StoreName.Contains(StoreNameFilter)).ToList();
+
+                                }
+                                listStores = infoToAdd.ToList();
                             }
                         }
                     }

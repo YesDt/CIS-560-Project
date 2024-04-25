@@ -1,12 +1,31 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Linq;
 
 namespace _560Project.Pages
 {
     public class GamesAndConsolesModel : PageModel
     {
+
+        [BindProperty(SupportsGet = true)]
+        public int GameConsoleIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int GameIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int ConsoleIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string? TitleFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int UnitPriceFilter { get; set; }
+
         public List<GameConsoleInfo> listGameConsoles = new List<GameConsoleInfo>();
+        public List<GameConsoleInfo> infoToAdd = new List<GameConsoleInfo>();
         public void OnGet()
         {
             try
@@ -27,9 +46,37 @@ namespace _560Project.Pages
                                 gameConsole.GameID = reader.GetInt32(1);
                                 gameConsole.ConsoleID = reader.GetInt32(2);
                                 gameConsole.Title = reader.GetString(3);
-                                gameConsole.Quantity = reader.GetInt32(4);
-                                gameConsole.UnitPrice = reader.GetInt32(5);
-                                listGameConsoles.Add(gameConsole);
+                                gameConsole.UnitPrice = reader.GetInt32(4);
+                                infoToAdd.Add(gameConsole);
+                                if (GameConsoleIDFilter != 0)
+                                {
+
+                                    infoToAdd = infoToAdd.Where(p => p.GameConsoleID == GameConsoleIDFilter).ToList();
+                                    
+
+                                }
+                                if (GameIDFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.GameID == GameIDFilter).ToList();
+
+                                }
+                                if (ConsoleIDFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.ConsoleID == ConsoleIDFilter).ToList();
+
+                                }
+                                if (!String.IsNullOrEmpty(TitleFilter))
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.Title.Contains(TitleFilter)).ToList();
+
+                                }
+                                if (UnitPriceFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.UnitPrice == UnitPriceFilter).ToList();
+
+                                }
+                                listGameConsoles = infoToAdd.ToList();
+
                             }
                         }
                     }
@@ -39,7 +86,10 @@ namespace _560Project.Pages
             {
 
             }
+
+
         }
+
     }
 
     public class GameConsoleInfo
@@ -48,7 +98,6 @@ namespace _560Project.Pages
         public int GameID;
         public int ConsoleID;
         public string Title;
-        public int Quantity;
         public int UnitPrice;
     }
 }

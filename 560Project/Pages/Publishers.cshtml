@@ -4,7 +4,11 @@
     ViewData["Title"] = "Publishers";
 }
 <p>This shows all of the publishers.</p>
-
+<form method="get">
+    <input type="number" name="PublisherIDFilter" placeholder="Filter by PublisherID">
+    <input type="text" name="PublisherNameFilter" placeholder="Filter by PublisherName">
+    <button type="submit">Apply Filters</button>
+</form>
 <table class="table">
     <thead>
         <tr>

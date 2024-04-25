@@ -4,15 +4,22 @@
     ViewData["Title"] = "GamesAndConsoles";
 }
 <p>This shows the games with console information.</p>
-
+<form method="get">
+    <input type="number" name="GameConsoleIDFilter" placeholder="Filter by GameConsoleID">
+    <input type="number" name="GameIDFilter" placeholder="Filter by GameID">
+    <input type="number" name="ConsoleIDFilter" placeholder="Filter by ConsoleID">
+    <input type="text" name="TitleFilter" placeholder="Filter by Title">
+    <input type="number" name="UnitPriceFilter" placeholder="Filter by UnitPrice">
+    <button type="submit">Apply Filters</button>
+</form>
 <table class="table">
     <thead>
+
         <tr>
             <th>GameConsoleID</th>
             <th>GameID</th>
             <th>ConsoleID</th>
             <th>Title</th>
-            <th>Quantity</th>
             <th>UnitPrice</th>
         </tr>
     </thead>
@@ -24,7 +31,6 @@
                 <td>@gameconsole.GameID</td>
                 <td>@gameconsole.ConsoleID</td>
                 <td>@gameconsole.Title</td>
-                <td>@gameconsole.Quantity</td>
                 <td>@gameconsole.UnitPrice</td>
             </tr>
         }

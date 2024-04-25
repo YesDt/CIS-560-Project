@@ -6,7 +6,24 @@ namespace _560Project.Pages
 {
     public class ConsolesModel : PageModel
     {
+
+        [BindProperty(SupportsGet = true)]
+        public int ConsoleIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string? ConsoleNameFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int PublisherIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int UserRatingFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int UnitPriceFilter { get; set; }
+
         public List<ConsoleInfo> listConsoles = new List<ConsoleInfo>();
+        public List<ConsoleInfo> infoToAdd = new List<ConsoleInfo>();
         public void OnGet()
         {
             try
@@ -27,9 +44,36 @@ namespace _560Project.Pages
                                 console.ConsoleName = reader.GetString(1);
                                 console.PublisherID = reader.GetInt32(2);
                                 console.UserRating = reader.GetInt32(3);
-                                console.UserPrice = reader.GetInt32(4);
-                                console.Quantity = reader.GetInt32(5);
-                                listConsoles.Add(console);
+                                console.UnitPrice = reader.GetInt32(4);
+                                infoToAdd.Add(console);
+                                if (ConsoleIDFilter != 0)
+                                {
+
+                                    infoToAdd = infoToAdd.Where(p => p.ConsoleID == ConsoleIDFilter).ToList();
+
+
+                                }
+                                if (!String.IsNullOrEmpty(ConsoleNameFilter))
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.ConsoleName.Contains(ConsoleNameFilter)).ToList();
+
+                                }
+                                if (PublisherIDFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.PublisherID == PublisherIDFilter).ToList();
+
+                                }
+                                if (UserRatingFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.UserRating == UserRatingFilter).ToList();
+
+                                }
+                                if (UnitPriceFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.UnitPrice == UnitPriceFilter).ToList();
+
+                                }
+                                listConsoles = infoToAdd.ToList();
                             }
                         }
                     }
@@ -48,7 +92,7 @@ namespace _560Project.Pages
         public string ConsoleName;
         public int PublisherID;
         public int UserRating;
-        public int UserPrice;
-        public int Quantity;
+        public int UnitPrice;
+
     }
 }

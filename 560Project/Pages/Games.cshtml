@@ -5,6 +5,13 @@
 }
 <p>This shows all of the games.</p>
 
+<form method="get">
+    <input type="number" name="GameIDFilter" placeholder="Filter by GameID">
+    <input type="text" name="GameNameFilter" placeholder="Filter by GameName">
+    <input type="number" name="PublisherIDFilter" placeholder="Filter by PublisherID">
+    <input type="number" name="UserRatingFilter" placeholder="Filter by UserRating">
+    <button type="submit">Apply Filters</button>
+</form>
 <table class="table">
     <thead>
         <tr>

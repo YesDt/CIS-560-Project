@@ -6,7 +6,21 @@ namespace _560Project.Pages
 {
     public class InventoriesModel : PageModel
     {
+
+        [BindProperty(SupportsGet = true)]
+        public int InventoryIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int GameConsoleIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int StoreIDFilter { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int QuantityFilter { get; set; }
+
         public List<InventoryInfo> listInventories = new List<InventoryInfo>();
+        public List<InventoryInfo> infoToAdd = new List<InventoryInfo>();
         public void OnGet()
         {
             try
@@ -26,7 +40,31 @@ namespace _560Project.Pages
                                 inventory.InventoryID = reader.GetInt32(0);
                                 inventory.GameConsoleID = reader.GetInt32(1);
                                 inventory.StoreID = reader.GetInt32(2);
-                                listInventories.Add(inventory);
+                                inventory.Quantity = reader.GetInt32(3);
+                                infoToAdd.Add(inventory);
+                                if (InventoryIDFilter != 0)
+                                {
+
+                                    infoToAdd = infoToAdd.Where(p => p.InventoryID == InventoryIDFilter).ToList();
+
+
+                                }
+                                if (GameConsoleIDFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.GameConsoleID == GameConsoleIDFilter).ToList();
+
+                                }
+                                if (StoreIDFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.StoreID == StoreIDFilter).ToList();
+
+                                }
+                                if (QuantityFilter != 0)
+                                {
+                                    infoToAdd = infoToAdd.Where(p => p.Quantity == QuantityFilter).ToList();
+
+                                }
+                                listInventories = infoToAdd.ToList();
                             }
                         }
                     }
@@ -44,5 +82,6 @@ namespace _560Project.Pages
         public int InventoryID;
         public int GameConsoleID;
         public int StoreID;
+        public int Quantity;
     }
 }
