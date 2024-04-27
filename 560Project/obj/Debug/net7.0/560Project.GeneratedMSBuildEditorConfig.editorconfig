@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _560Project
 build_property.RootNamespace = _560Project
-build_property.ProjectDir = C:\Users\garre\Source\Repos\CIS-560-Project\560Project\
+build_property.ProjectDir = C:\Users\dtyso\Source\Repos\CIS-560-Project\560Project\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\garre\Source\Repos\CIS-560-Project\560Project
+build_property.MSBuildProjectDirectory = C:\Users\dtyso\Source\Repos\CIS-560-Project\560Project
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Consoles.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Consoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc29sZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Error.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Games.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Games.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/GamesAndConsoles.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/GamesAndConsoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZXNBbmRDb25zb2xlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Index.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Inventories.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Inventories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Privacy.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Publishers.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Publishers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVibGlzaGVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Stores.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Stores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/_ViewImports.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/_ViewStart.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/garre/Source/Repos/CIS-560-Project/560Project/Pages/Shared/_Layout.cshtml]
+[C:/Users/dtyso/Source/Repos/CIS-560-Project/560Project/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-iyuy9ad1tu

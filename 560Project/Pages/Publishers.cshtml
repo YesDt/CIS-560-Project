@@ -11,7 +11,7 @@
 </form>
 <table class="table">
     <thead>
-        <tr>
+        <tr style="background-color: lightgreen">
             <th>PublisherID</th>
             <th>PublisherName</th>
         </tr>
@@ -19,7 +19,7 @@
     <tbody>
         @foreach (var publisher in Model.listPublishers)
         {
-            <tr>
+            <tr style="background-color: lightseagreen">
                 <td>@publisher.PublisherID</td>
                 <td>@publisher.PublisherName</td>
             </tr>

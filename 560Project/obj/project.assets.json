@@ -470,19 +470,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\garre\\.nuget\\packages\\": {}
+    "C:\\Users\\dtyso\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
+      "projectUniqueName": "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
       "projectName": "560Project",
-      "projectPath": "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
-      "packagesPath": "C:\\Users\\garre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\garre\\Source\\Repos\\CIS-560-Project\\560Project\\obj\\",
+      "projectPath": "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
+      "packagesPath": "C:\\Users\\dtyso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\garre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dtyso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -532,7 +537,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

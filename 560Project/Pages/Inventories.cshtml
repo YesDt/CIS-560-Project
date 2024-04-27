@@ -15,7 +15,7 @@
 </form>
 <table class="table">
     <thead>
-        <tr>
+        <tr style="background-color: lightgreen">
             <th>InventoryID</th>
             <th>GameConsoleID</th>
             <th>StoreID</th>
@@ -26,7 +26,7 @@
     <tbody>
         @foreach (var inventory in Model.listInventories)
         {
-            <tr>
+            <tr style="background-color: lightseagreen">
                 <td>@inventory.InventoryID</td>
                 <td>@inventory.GameConsoleID</td>
                 <td>@inventory.StoreID</td>

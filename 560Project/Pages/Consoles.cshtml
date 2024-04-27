@@ -14,7 +14,7 @@
 </form>
 <table class="table">
     <thead>
-        <tr>
+        <tr style="background-color: lightgreen">
             <th>ConsoleID</th>
             <th>ConsoleName</th>
             <th>PublisherID</th>
@@ -26,7 +26,7 @@
     <tbody>
         @foreach (var console in Model.listConsoles)
         {
-            <tr>
+            <tr style="background-color: lightseagreen">
                 <td>@console.ConsoleID</td>
                 <td>@console.ConsoleName</td>
                 <td>@console.PublisherID</td>
