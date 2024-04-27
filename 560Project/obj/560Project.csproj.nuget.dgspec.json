@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj": {}
+    "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj": {
+    "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
+        "projectUniqueName": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
         "projectName": "560Project",
-        "projectPath": "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\560Project.csproj",
+        "projectPath": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\560Project.csproj",
         "packagesPath": "C:\\Users\\dtyso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dtyso\\Source\\Repos\\CIS-560-Project\\560Project\\obj\\",
+        "outputPath": "C:\\Users\\dtyso\\source\\repos\\CIS-560-Project\\560Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
